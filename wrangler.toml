@@ -1,0 +1,11 @@
+# Chuyển tiếp lời gọi Claude API cho bot Will của các app Pages Power Up — chạy cố định ở Singapore.
+# Deploy: npx wrangler@4 deploy (thư mục này). App gọi qua service binding CLAUDE (wrangler.toml của app), không có địa chỉ công khai.
+name = "claude-sin"
+main = "index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+preview_urls = false
+
+# Pages Functions không nhận chỉ định vùng ("Invalid placement mode", 05/10/2026) nên phải tách ra Worker thường
+[placement]
+region = "aws:ap-southeast-1"
