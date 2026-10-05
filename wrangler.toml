@@ -1,4 +1,4 @@
-# Chuyển tiếp lời gọi Claude API cho bot Will của các app Pages Power Up — chạy cố định ở Singapore.
+# Chuyển tiếp lời gọi Claude API cho bot Will của các app Pages Power Up 1–3 — chạy cố định ở Singapore.
 # Deploy: npx wrangler@4 deploy (thư mục này). App gọi qua service binding CLAUDE (wrangler.toml của app), không có địa chỉ công khai.
 name = "claude-sin"
 main = "index.js"
